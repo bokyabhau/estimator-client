@@ -1,0 +1,21 @@
+language: node_js
+
+node_js:
+  - 16
+
+before_script:
+  - npm install
+
+script:
+  - npm run test:headless
+
+before_deploy:
+  - npm run build:prod
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $ESTIMATOR__CLIENT_GHP
+  local_dir: dist/estimator-client"
+  on:
+    branch: main
