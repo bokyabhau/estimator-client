@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:prod": "ng build --prod --base-href https://bokyabhau.github.io/estimator-client/",
+    "build:prod": "ng build --base-href https://bokyabhau.github.io/estimator-client/",
     "test:headless": "ng test --watch=false --browsers=ChromeHeadless"
   
   },
