@@ -16,6 +16,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $ESTIMATOR__CLIENT_GHP
-  local_dir: dist/estimator-client"
+  local_dir: /dist/estimator-client/"
   on:
     branch: main
